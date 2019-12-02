@@ -1,0 +1,35 @@
+<launch>
+	
+	<group ns="edge_detection">
+	<include file="$(find astra_camera)/launch/astra.launch">
+		<arg name="device_id" value="#1" />
+		<arg name="depth" value="depth" />
+
+		<remap from="/camera/depth/image" to="/edge_detection/stereo_camera"/>
+	</include>
+
+	<node name="rgb_cam" pkg="libuvc_camera" type="camera_node">
+		<remap from="/image_raw" to="/edge_detection_rgb/rgb/image"/>
+	</node>
+ 
+	<node name="client" pkg="ideasclinic" type="client.py">
+	</node>
+	</group>
+
+	<group ns="class_detection">
+	<include file="$(find astra_camera)/launch/astra.launch">
+		<arg name="device_id" value="#2" />
+		<arg name="depth" value="depth" />
+		
+		<remap from="/camera/depth/image" to="/class_detection/stereo_camera"/>
+	</include>
+        
+<!--	<node name="rgb_cam_class" pkg="libuvc_camera" type="camera_node">
+                <remap from="/image_raw" to="/class_rgb/rgb/image"/>
+        </node>
+
+	<node name="classification" pkg="ideasclinic" type="classification.py">
+	</node> -->
+	</group>
+
+</launch>

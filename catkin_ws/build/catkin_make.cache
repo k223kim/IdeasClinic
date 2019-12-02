@@ -1,0 +1,2 @@
+ideasclinic:ros_astra_camera
+-DCATKIN_DEVEL_PREFIX=/home/kaeun/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kaeun/catkin_ws/install -G Unix Makefiles
