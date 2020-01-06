@@ -1,0 +1,19 @@
+nm-connection-editor
+
+wired connection -> IP4 Settings, set method to "Shared to other computers" -> Save
+
+Follow this instruction:
+https://askubuntu.com/questions/359856/share-wireless-internet-connection-through-ethernet
+
+type in ifconfig to find the new ip address and netmask number
+
+go to the jetson board
+
+set method: manual 
+address: 10.42.0.69
+Netmask: the one that you saw earlier
+Gateway: the ip address that I saw
+DNS servers: the ip address that I saw
+
+
+Also, select the "Automatically connect to this network when it is available" in the General tab.
