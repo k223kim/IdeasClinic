@@ -21,6 +21,7 @@ dc38a00180cc8b598c9abe5025fe1930 /home/kaeun/catkin_ws/devel/include/astra_camer
 2b70a5d9b879f7594d58ff8b9296a413 /home/kaeun/catkin_ws/devel/include/astra_camera/SwitchIRCamera.h
 05ed4d90065e1e45007e21491c7537da /home/kaeun/catkin_ws/devel/include/astra_camera/UVCCameraConfig.h
 89dc025a63be4b8e4f95c4fe722aa2a2 /home/kaeun/catkin_ws/devel/include/ideasclinic/box_info.h
+8fa4180a977a6bd2acc69463859df1a7 /home/kaeun/catkin_ws/devel/include/ideasclinic/class_info.h
 df8cb3d918dfe3cdfc806493f3b69906 /home/kaeun/catkin_ws/devel/lib/python2.7/dist-packages/astra_camera/srv/_GetCameraInfo.py
 04f6964507e9b95b7405525ae69e6517 /home/kaeun/catkin_ws/devel/lib/python2.7/dist-packages/astra_camera/srv/_GetDeviceType.py
 cd9e245db31fab649a5e506574d85f9f /home/kaeun/catkin_ws/devel/lib/python2.7/dist-packages/astra_camera/srv/_GetIRExposure.py
@@ -43,6 +44,7 @@ a38d9feb1983b1568227dacecda4725a /home/kaeun/catkin_ws/devel/lib/python2.7/dist-
 f7a66a41e41ead5639cc4766df07259f /home/kaeun/catkin_ws/devel/lib/python2.7/dist-packages/astra_camera/srv/__init__.py
 fd077281e4207690fcea9009eb8ce71b /home/kaeun/catkin_ws/devel/lib/python2.7/dist-packages/ideasclinic/msg/__init__.py
 bee3712f4039c7249ecf964f55e490fa /home/kaeun/catkin_ws/devel/lib/python2.7/dist-packages/ideasclinic/msg/_box_info.py
+6a632644d11dd6abcf5612ca19e0263b /home/kaeun/catkin_ws/devel/lib/python2.7/dist-packages/ideasclinic/msg/_class_info.py
 9e18dba2900cce39715906e947ad8d38 /home/kaeun/catkin_ws/devel/share/common-lisp/ros/astra_camera/srv/GetCameraInfo.lisp
 0fa89780c73aa20695c80266175766fe /home/kaeun/catkin_ws/devel/share/common-lisp/ros/astra_camera/srv/GetDeviceType.lisp
 0c7d5a591db9bafa3f96caeca00bec00 /home/kaeun/catkin_ws/devel/share/common-lisp/ros/astra_camera/srv/GetIRExposure.lisp
@@ -63,6 +65,7 @@ f807cfc93545826e067fcaa0abb23fd2 /home/kaeun/catkin_ws/devel/share/common-lisp/r
 c00bcf440ea8e8a05ebf65efa53415b5 /home/kaeun/catkin_ws/devel/share/common-lisp/ros/astra_camera/srv/SetUVCWhiteBalance.lisp
 1c82070e6eec7f61d5aa89cc6febb778 /home/kaeun/catkin_ws/devel/share/common-lisp/ros/astra_camera/srv/SwitchIRCamera.lisp
 0001d805b055ebe9948d424b8052649d /home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg/box_info.lisp
+ddd5ddfb2e5568cfecd8e10679d46f91 /home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg/class_info.lisp
 2615662c5f678f41b43b8ac613da6e5f /home/kaeun/catkin_ws/devel/share/gennodejs/ros/astra_camera/srv/GetCameraInfo.js
 7354fa9d4df21e88f8d01a3829e8c26f /home/kaeun/catkin_ws/devel/share/gennodejs/ros/astra_camera/srv/GetDeviceType.js
 a2d05900a0b6bde7b4ac083b6b0bda18 /home/kaeun/catkin_ws/devel/share/gennodejs/ros/astra_camera/srv/GetIRExposure.js
@@ -83,6 +86,7 @@ a631eec5a21a33bf6ec09b29b426a794 /home/kaeun/catkin_ws/devel/share/gennodejs/ros
 7504f785c194e0c0fcd2f6f1af6cd1d7 /home/kaeun/catkin_ws/devel/share/gennodejs/ros/astra_camera/srv/SetUVCWhiteBalance.js
 806573282c9532d0c1ca6a7ea789305b /home/kaeun/catkin_ws/devel/share/gennodejs/ros/astra_camera/srv/SwitchIRCamera.js
 2ee57f14deaab5d35fcb8337078bb90d /home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg/box_info.js
+e6678560282e8447b791e43b9d87b9f3 /home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg/class_info.js
 7f8655a555eeacf7931e2fb91f49be2b /home/kaeun/catkin_ws/devel/share/roseus/ros/astra_camera/manifest.l
 311f7fcc0f77d7bdfe3f538b9fb2ddc6 /home/kaeun/catkin_ws/devel/share/roseus/ros/astra_camera/srv/GetCameraInfo.l
 b4990e325abc5abd75e4dbd3c6962469 /home/kaeun/catkin_ws/devel/share/roseus/ros/astra_camera/srv/GetDeviceType.l
@@ -105,8 +109,10 @@ cc7a5f9674b1d681896e61ca141a750b /home/kaeun/catkin_ws/devel/share/roseus/ros/as
 5c99dec586fb4fc27dbbac95d07f4ef4 /home/kaeun/catkin_ws/devel/share/roseus/ros/astra_camera/srv/SwitchIRCamera.l
 0938237a2cbdc4c420274bd61a893f34 /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/manifest.l
 18cc0be81924f9dbf160d4681f006e62 /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg/box_info.l
+299b2a23196105745cb3e8ec1b163653 /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg/class_info.l
 85ba8e081ce8dd634d0c11d897c39eee CMakeFiles/clean_test_results
 8a9d17d74e2ea36664b88b5e68880600 ideasclinic/CMakeFiles/_ideasclinic_generate_messages_check_deps_box_info
+70a1e3ccbf1722a4d4e3702f67423592 ideasclinic/CMakeFiles/_ideasclinic_generate_messages_check_deps_class_info
 0a17f835fb02795ecbdfbe75cf762123 ideasclinic/CMakeFiles/ideasclinic_generate_messages_cpp
 0a17f835fb02795ecbdfbe75cf762123 ideasclinic/CMakeFiles/ideasclinic_generate_messages_eus
 0a17f835fb02795ecbdfbe75cf762123 ideasclinic/CMakeFiles/ideasclinic_generate_messages_lisp

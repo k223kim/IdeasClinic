@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/kaeun/catkin_ws/build
 include ideasclinic/CMakeFiles/ideasclinic_generate_messages_lisp.dir/progress.make
 
 ideasclinic/CMakeFiles/ideasclinic_generate_messages_lisp: /home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg/box_info.lisp
+ideasclinic/CMakeFiles/ideasclinic_generate_messages_lisp: /home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg/class_info.lisp
 
 
 /home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg/box_info.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
@@ -62,8 +63,15 @@ ideasclinic/CMakeFiles/ideasclinic_generate_messages_lisp: /home/kaeun/catkin_ws
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kaeun/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from ideasclinic/box_info.msg"
 	cd /home/kaeun/catkin_ws/build/ideasclinic && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg -Iideasclinic:/home/kaeun/catkin_ws/src/ideasclinic/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ideasclinic -o /home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg
 
+/home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg/class_info.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg/class_info.lisp: /home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg
+/home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg/class_info.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kaeun/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from ideasclinic/class_info.msg"
+	cd /home/kaeun/catkin_ws/build/ideasclinic && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg -Iideasclinic:/home/kaeun/catkin_ws/src/ideasclinic/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ideasclinic -o /home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg
+
 ideasclinic_generate_messages_lisp: ideasclinic/CMakeFiles/ideasclinic_generate_messages_lisp
 ideasclinic_generate_messages_lisp: /home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg/box_info.lisp
+ideasclinic_generate_messages_lisp: /home/kaeun/catkin_ws/devel/share/common-lisp/ros/ideasclinic/msg/class_info.lisp
 ideasclinic_generate_messages_lisp: ideasclinic/CMakeFiles/ideasclinic_generate_messages_lisp.dir/build.make
 
 .PHONY : ideasclinic_generate_messages_lisp

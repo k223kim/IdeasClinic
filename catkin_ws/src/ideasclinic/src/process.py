@@ -6,9 +6,9 @@ import sympy
 from sympy.solvers import solve
 from sympy import Symbol
 
-BKG_THRESH = 60
-CARD_MAX_AREA = 100000
-CARD_MIN_AREA = 1000
+BKG_THRESH = 20
+CARD_MAX_AREA = 20000
+CARD_MIN_AREA = 20
 
 class box:
     def __init__(self):

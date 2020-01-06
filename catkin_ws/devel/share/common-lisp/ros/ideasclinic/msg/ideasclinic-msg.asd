@@ -7,4 +7,6 @@
   :components ((:file "_package")
     (:file "box_info" :depends-on ("_package_box_info"))
     (:file "_package_box_info" :depends-on ("_package"))
+    (:file "class_info" :depends-on ("_package_class_info"))
+    (:file "_package_class_info" :depends-on ("_package"))
   ))

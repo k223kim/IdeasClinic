@@ -38,7 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ideasclinic/msg" TYPE FILE FILES "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ideasclinic/msg" TYPE FILE FILES
+    "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg"
+    "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

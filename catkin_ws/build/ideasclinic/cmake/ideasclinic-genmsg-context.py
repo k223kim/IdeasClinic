@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg"
+messages_str = "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg;/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg"
 services_str = ""
 pkg_name = "ideasclinic"
 dependencies_str = "sensor_msgs;std_msgs"

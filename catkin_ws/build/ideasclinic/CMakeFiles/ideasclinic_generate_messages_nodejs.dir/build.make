@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/kaeun/catkin_ws/build
 include ideasclinic/CMakeFiles/ideasclinic_generate_messages_nodejs.dir/progress.make
 
 ideasclinic/CMakeFiles/ideasclinic_generate_messages_nodejs: /home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg/box_info.js
+ideasclinic/CMakeFiles/ideasclinic_generate_messages_nodejs: /home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg/class_info.js
 
 
 /home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg/box_info.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
@@ -62,8 +63,15 @@ ideasclinic/CMakeFiles/ideasclinic_generate_messages_nodejs: /home/kaeun/catkin_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kaeun/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from ideasclinic/box_info.msg"
 	cd /home/kaeun/catkin_ws/build/ideasclinic && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg -Iideasclinic:/home/kaeun/catkin_ws/src/ideasclinic/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ideasclinic -o /home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg
 
+/home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg/class_info.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg/class_info.js: /home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg
+/home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg/class_info.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kaeun/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from ideasclinic/class_info.msg"
+	cd /home/kaeun/catkin_ws/build/ideasclinic && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg -Iideasclinic:/home/kaeun/catkin_ws/src/ideasclinic/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ideasclinic -o /home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg
+
 ideasclinic_generate_messages_nodejs: ideasclinic/CMakeFiles/ideasclinic_generate_messages_nodejs
 ideasclinic_generate_messages_nodejs: /home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg/box_info.js
+ideasclinic_generate_messages_nodejs: /home/kaeun/catkin_ws/devel/share/gennodejs/ros/ideasclinic/msg/class_info.js
 ideasclinic_generate_messages_nodejs: ideasclinic/CMakeFiles/ideasclinic_generate_messages_nodejs.dir/build.make
 
 .PHONY : ideasclinic_generate_messages_nodejs

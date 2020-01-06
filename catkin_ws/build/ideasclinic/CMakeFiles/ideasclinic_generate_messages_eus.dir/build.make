@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/kaeun/catkin_ws/build
 include ideasclinic/CMakeFiles/ideasclinic_generate_messages_eus.dir/progress.make
 
 ideasclinic/CMakeFiles/ideasclinic_generate_messages_eus: /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg/box_info.l
+ideasclinic/CMakeFiles/ideasclinic_generate_messages_eus: /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg/class_info.l
 ideasclinic/CMakeFiles/ideasclinic_generate_messages_eus: /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/manifest.l
 
 
@@ -63,12 +64,19 @@ ideasclinic/CMakeFiles/ideasclinic_generate_messages_eus: /home/kaeun/catkin_ws/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kaeun/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from ideasclinic/box_info.msg"
 	cd /home/kaeun/catkin_ws/build/ideasclinic && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg -Iideasclinic:/home/kaeun/catkin_ws/src/ideasclinic/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ideasclinic -o /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg
 
+/home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg/class_info.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg/class_info.l: /home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg
+/home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg/class_info.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kaeun/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from ideasclinic/class_info.msg"
+	cd /home/kaeun/catkin_ws/build/ideasclinic && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg -Iideasclinic:/home/kaeun/catkin_ws/src/ideasclinic/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ideasclinic -o /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg
+
 /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kaeun/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for ideasclinic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kaeun/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for ideasclinic"
 	cd /home/kaeun/catkin_ws/build/ideasclinic && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic ideasclinic sensor_msgs std_msgs
 
 ideasclinic_generate_messages_eus: ideasclinic/CMakeFiles/ideasclinic_generate_messages_eus
 ideasclinic_generate_messages_eus: /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg/box_info.l
+ideasclinic_generate_messages_eus: /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/msg/class_info.l
 ideasclinic_generate_messages_eus: /home/kaeun/catkin_ws/devel/share/roseus/ros/ideasclinic/manifest.l
 ideasclinic_generate_messages_eus: ideasclinic/CMakeFiles/ideasclinic_generate_messages_eus.dir/build.make
 

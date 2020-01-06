@@ -3,5 +3,7 @@
   (:export
    "<BOX_INFO>"
    "BOX_INFO"
+   "<CLASS_INFO>"
+   "CLASS_INFO"
   ))
 

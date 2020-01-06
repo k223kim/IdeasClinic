@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/kaeun/catkin_ws/build
 include ideasclinic/CMakeFiles/ideasclinic_generate_messages_cpp.dir/progress.make
 
 ideasclinic/CMakeFiles/ideasclinic_generate_messages_cpp: /home/kaeun/catkin_ws/devel/include/ideasclinic/box_info.h
+ideasclinic/CMakeFiles/ideasclinic_generate_messages_cpp: /home/kaeun/catkin_ws/devel/include/ideasclinic/class_info.h
 
 
 /home/kaeun/catkin_ws/devel/include/ideasclinic/box_info.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
@@ -63,8 +64,16 @@ ideasclinic/CMakeFiles/ideasclinic_generate_messages_cpp: /home/kaeun/catkin_ws/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kaeun/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from ideasclinic/box_info.msg"
 	cd /home/kaeun/catkin_ws/src/ideasclinic && /home/kaeun/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg -Iideasclinic:/home/kaeun/catkin_ws/src/ideasclinic/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ideasclinic -o /home/kaeun/catkin_ws/devel/include/ideasclinic -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/kaeun/catkin_ws/devel/include/ideasclinic/class_info.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/kaeun/catkin_ws/devel/include/ideasclinic/class_info.h: /home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg
+/home/kaeun/catkin_ws/devel/include/ideasclinic/class_info.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/kaeun/catkin_ws/devel/include/ideasclinic/class_info.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kaeun/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from ideasclinic/class_info.msg"
+	cd /home/kaeun/catkin_ws/src/ideasclinic && /home/kaeun/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg -Iideasclinic:/home/kaeun/catkin_ws/src/ideasclinic/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ideasclinic -o /home/kaeun/catkin_ws/devel/include/ideasclinic -e /opt/ros/melodic/share/gencpp/cmake/..
+
 ideasclinic_generate_messages_cpp: ideasclinic/CMakeFiles/ideasclinic_generate_messages_cpp
 ideasclinic_generate_messages_cpp: /home/kaeun/catkin_ws/devel/include/ideasclinic/box_info.h
+ideasclinic_generate_messages_cpp: /home/kaeun/catkin_ws/devel/include/ideasclinic/class_info.h
 ideasclinic_generate_messages_cpp: ideasclinic/CMakeFiles/ideasclinic_generate_messages_cpp.dir/build.make
 
 .PHONY : ideasclinic_generate_messages_cpp

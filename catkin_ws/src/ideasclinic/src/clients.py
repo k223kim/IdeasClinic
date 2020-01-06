@@ -12,7 +12,7 @@ import process
 
 class client:
     def __init__(self):
-        self.camera_rgb = rospy.Subscriber("/edge_detection_rgb/rgb/image", Image, self.callback)
+        self.camera_rgb = rospy.Subscriber("/edge_detection/image_raw", Image, self.callback)
         self.pub = rospy.Publisher("box_info", box_info, queue_size = 10)
         self.last_time = rospy.Time().now().to_sec()
         self.latest_img = None
@@ -43,8 +43,20 @@ class client:
         self.latest_img = cv_image
     
     def process(self):
+        if self.latest_img is None:
+            return
         cv_image = self.latest_img
-        threshold_image = process.thresh_image(cv_image)
+
+#        img_array = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
+        pts_src = np.array([[220, 231], [320, 231], [320, 371], [220, 371]])
+        pts_dst = np.array([[0, 0], [299, 0], [299, 399], [0, 399]])
+
+        h, status = cv2.findHomography(pts_src, pts_dst)
+        im_out = cv2.warpPerspective(cv_image, h, (cv_image.shape[1], cv_image.shape[0]))
+        cv2.imshow("Wraped Source Image", im_out)
+        cv2.waitKey(5)
+
+        threshold_image = process.thresh_image(im_out)
         cnts_sort, cnt_is_card = process.contour(threshold_image)
 
         kaeun = None
@@ -55,6 +67,7 @@ class client:
                 if(cnt_is_card[i] == 1):
                     cards.append(process.find_information(cnts_sort[i], cv_image))
                     cv_image = process.draw(cv_image, cards[k])
+                    #im_out = process.draw(im_out, cards[k])
                     kaeun = cards[k]
                     k = k + 1
             if (len(cards) != 0):
@@ -62,7 +75,10 @@ class client:
                 for i in range(len(cards)):
                     temp_cnts.append(cards[i].contour) 
                 cv2.drawContours(cv_image, temp_cnts, -1, (255, 0, 0), 2)
+                #cv2.drawContours(im_out, temp_cnts, -1, (255, 0, 0), 2)
+
         cv2.imshow("threshold", cv_image)
+        #cv2.imshow("threshold", im_out)
 
 #        t = rospy.Time().now().to_sec()
 #        if t - self.last_time < 5:

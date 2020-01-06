@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "ideasclinic: 1 messages, 0 services")
+message(STATUS "ideasclinic: 2 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iideasclinic:/home/kaeun/catkin_ws/src/ideasclinic/msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_ideasclinic_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ideasclinic" "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg" "std_msgs/Header"
 )
 
+get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg" NAME_WE)
+add_custom_target(_ideasclinic_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ideasclinic" "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg" "std_msgs/Header"
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -30,6 +35,12 @@ add_custom_target(_ideasclinic_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(ideasclinic
   "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ideasclinic
+)
+_generate_msg_cpp(ideasclinic
+  "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ideasclinic
@@ -51,6 +62,8 @@ add_dependencies(ideasclinic_generate_messages ideasclinic_generate_messages_cpp
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg" NAME_WE)
 add_dependencies(ideasclinic_generate_messages_cpp _ideasclinic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg" NAME_WE)
+add_dependencies(ideasclinic_generate_messages_cpp _ideasclinic_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(ideasclinic_gencpp)
@@ -63,6 +76,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ideasclinic_generate_messages_cpp)
 ### Generating Messages
 _generate_msg_eus(ideasclinic
   "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ideasclinic
+)
+_generate_msg_eus(ideasclinic
+  "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ideasclinic
@@ -84,6 +103,8 @@ add_dependencies(ideasclinic_generate_messages ideasclinic_generate_messages_eus
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg" NAME_WE)
 add_dependencies(ideasclinic_generate_messages_eus _ideasclinic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg" NAME_WE)
+add_dependencies(ideasclinic_generate_messages_eus _ideasclinic_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(ideasclinic_geneus)
@@ -96,6 +117,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ideasclinic_generate_messages_eus)
 ### Generating Messages
 _generate_msg_lisp(ideasclinic
   "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ideasclinic
+)
+_generate_msg_lisp(ideasclinic
+  "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ideasclinic
@@ -117,6 +144,8 @@ add_dependencies(ideasclinic_generate_messages ideasclinic_generate_messages_lis
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg" NAME_WE)
 add_dependencies(ideasclinic_generate_messages_lisp _ideasclinic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg" NAME_WE)
+add_dependencies(ideasclinic_generate_messages_lisp _ideasclinic_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(ideasclinic_genlisp)
@@ -129,6 +158,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ideasclinic_generate_messages_lisp)
 ### Generating Messages
 _generate_msg_nodejs(ideasclinic
   "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ideasclinic
+)
+_generate_msg_nodejs(ideasclinic
+  "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ideasclinic
@@ -150,6 +185,8 @@ add_dependencies(ideasclinic_generate_messages ideasclinic_generate_messages_nod
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg" NAME_WE)
 add_dependencies(ideasclinic_generate_messages_nodejs _ideasclinic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg" NAME_WE)
+add_dependencies(ideasclinic_generate_messages_nodejs _ideasclinic_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(ideasclinic_gennodejs)
@@ -162,6 +199,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ideasclinic_generate_messages_nodej
 ### Generating Messages
 _generate_msg_py(ideasclinic
   "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ideasclinic
+)
+_generate_msg_py(ideasclinic
+  "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ideasclinic
@@ -182,6 +225,8 @@ add_dependencies(ideasclinic_generate_messages ideasclinic_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/box_info.msg" NAME_WE)
+add_dependencies(ideasclinic_generate_messages_py _ideasclinic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaeun/catkin_ws/src/ideasclinic/msg/class_info.msg" NAME_WE)
 add_dependencies(ideasclinic_generate_messages_py _ideasclinic_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

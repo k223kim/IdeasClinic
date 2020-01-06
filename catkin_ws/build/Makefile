@@ -402,32 +402,6 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named ideasclinic_genpy
-
-# Build rule for target.
-ideasclinic_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ideasclinic_genpy
-.PHONY : ideasclinic_genpy
-
-# fast build rule for target.
-ideasclinic_genpy/fast:
-	$(MAKE) -f ideasclinic/CMakeFiles/ideasclinic_genpy.dir/build.make ideasclinic/CMakeFiles/ideasclinic_genpy.dir/build
-.PHONY : ideasclinic_genpy/fast
-
-#=============================================================================
-# Target rules for targets named ideasclinic_generate_messages_py
-
-# Build rule for target.
-ideasclinic_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ideasclinic_generate_messages_py
-.PHONY : ideasclinic_generate_messages_py
-
-# fast build rule for target.
-ideasclinic_generate_messages_py/fast:
-	$(MAKE) -f ideasclinic/CMakeFiles/ideasclinic_generate_messages_py.dir/build.make ideasclinic/CMakeFiles/ideasclinic_generate_messages_py.dir/build
-.PHONY : ideasclinic_generate_messages_py/fast
-
-#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -725,6 +699,45 @@ ideasclinic_generate_messages_cpp: cmake_check_build_system
 ideasclinic_generate_messages_cpp/fast:
 	$(MAKE) -f ideasclinic/CMakeFiles/ideasclinic_generate_messages_cpp.dir/build.make ideasclinic/CMakeFiles/ideasclinic_generate_messages_cpp.dir/build
 .PHONY : ideasclinic_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named ideasclinic_genpy
+
+# Build rule for target.
+ideasclinic_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ideasclinic_genpy
+.PHONY : ideasclinic_genpy
+
+# fast build rule for target.
+ideasclinic_genpy/fast:
+	$(MAKE) -f ideasclinic/CMakeFiles/ideasclinic_genpy.dir/build.make ideasclinic/CMakeFiles/ideasclinic_genpy.dir/build
+.PHONY : ideasclinic_genpy/fast
+
+#=============================================================================
+# Target rules for targets named ideasclinic_generate_messages_py
+
+# Build rule for target.
+ideasclinic_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ideasclinic_generate_messages_py
+.PHONY : ideasclinic_generate_messages_py
+
+# fast build rule for target.
+ideasclinic_generate_messages_py/fast:
+	$(MAKE) -f ideasclinic/CMakeFiles/ideasclinic_generate_messages_py.dir/build.make ideasclinic/CMakeFiles/ideasclinic_generate_messages_py.dir/build
+.PHONY : ideasclinic_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _ideasclinic_generate_messages_check_deps_class_info
+
+# Build rule for target.
+_ideasclinic_generate_messages_check_deps_class_info: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ideasclinic_generate_messages_check_deps_class_info
+.PHONY : _ideasclinic_generate_messages_check_deps_class_info
+
+# fast build rule for target.
+_ideasclinic_generate_messages_check_deps_class_info/fast:
+	$(MAKE) -f ideasclinic/CMakeFiles/_ideasclinic_generate_messages_check_deps_class_info.dir/build.make ideasclinic/CMakeFiles/_ideasclinic_generate_messages_check_deps_class_info.dir/build
+.PHONY : _ideasclinic_generate_messages_check_deps_class_info/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_eus
@@ -1524,8 +1537,6 @@ help:
 	@echo "... ideasclinic_genlisp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... ideasclinic_genpy"
-	@echo "... ideasclinic_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -1549,6 +1560,9 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... _ideasclinic_generate_messages_check_deps_box_info"
 	@echo "... ideasclinic_generate_messages_cpp"
+	@echo "... ideasclinic_genpy"
+	@echo "... ideasclinic_generate_messages_py"
+	@echo "... _ideasclinic_generate_messages_check_deps_class_info"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... ideasclinic_generate_messages_eus"
 	@echo "... ideasclinic_gennodejs"
